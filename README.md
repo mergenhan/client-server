@@ -4,6 +4,7 @@ homework for cloud computing
 Projede bir server ve birden fazla istemci arasında grup olarak iletişim kurulabilmesi ve geliştirilmesi hedeflenmektedir. Bunu başarmak için sohbet odası uygulaması geliştirdim. Bu program 20 kişiye kadar istemci kabul etmektedir. 20 kadara istemci server.c dosyası çalıştırıldığı takdirde birbirleriyle ortak olarak iletişim kurabilmektedir.
 
 Sunucu ve istemciden oluşur. Sunucu, istemcilerden alınan ve gönderilen her işlemi yönetir. Sunucu, kullanıcıların şunları yapmasına izin verebilir: 
+
 1. Kullanıcı adı oluşturulur. 
 2. Belirli bir müşteriye doğrudan mesaj gönderilir. 
 3. Grupla sohbet edilir. 
@@ -39,12 +40,18 @@ How to compile and run?
 It is tested under Linux. Both server and client can be compiled with gcc. Followings can be enough for compiling it:
 
 gcc client.c -o client
+
 gcc server.c -o server -pthread
+
 After compilation:
+
 ./server (This will run server)
+
 ./client <IP address> (This will run client)
+	
 How to use functions?
 After you are entering chat room, you can use following function with the character:
+
 	•	#newname for changing your nickname.
 	•	#exit to quit program.
 	•	#dm for sending direct message.
